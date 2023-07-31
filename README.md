@@ -31,6 +31,6 @@ Configure NFS Server and Client in CentOS/RHEL 7
 
 	su - root
 
-	cd /mnt; mkdir b
+	mkdir /nfsshare
 
 	mount -t nfs 10.10.10.100:/nfsshare /nfsshare      #Replance nfs server ipaddress to 10.10.10.100
