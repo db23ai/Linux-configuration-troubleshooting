@@ -1,4 +1,4 @@
-Configure NFS Server and Client in CentOS/RHEL 7
+Configure NFS Server and Client in Linux Server
 
 -- Execute all steps using root user
 
