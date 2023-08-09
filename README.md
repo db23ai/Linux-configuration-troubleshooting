@@ -1,6 +1,6 @@
 Configure NFS Server and Client in Linux Server
 
--- Execute all steps using root user
+-- Run all steps using root user
 
 -- Install nfs-utils package
 
@@ -27,7 +27,7 @@ Configure NFS Server and Client in Linux Server
 
 -- Login into Target Server to mount nfs filesystem
 
--- Execute all steps using root user
+-- Run all steps using root user
 
 	su - root
 
