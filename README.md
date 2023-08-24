@@ -1,4 +1,4 @@
-Configure NFS Server and Client in Linux Server
+# Configure NFS Server and Client in Linux Server
 
 -- Run all steps using root user
 
