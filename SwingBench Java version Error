@@ -2,7 +2,7 @@ SwingBench Java version Error
 
 Issue :
 
-[oracle@node bin]$ ./oewizard -allindexes -bigfile -bs 10000 -cl -create  -dba "admin@mahiatps_high" -dbap "WElcome_12##" -nocompress -p "WElcome_12##" -part -scale 1 -ts ts_sb_oe -u soe21 –v
+[oracle@node bin]$ ./oewizard -allindexes -bigfile -bs 10000 -cl -create  -dba "admin@orcl_high" -dbap "Test@1234" -nocompress -p "Test@1234" -part -scale 1 -ts ts_sb_oe -u soe21 –v
 java.lang.UnsupportedClassVersionError: com/dom/benchmarking/swingbench/wizards/Wizard has been compiled by a more recent version of the Java Runtime (class file version 55.0), this version of the Java Runtime only recognizes class file versions up to 52.0
         at java.lang.ClassLoader.defineClass1(Native Method)
         at java.lang.ClassLoader.defineClass(Unknown Source)
@@ -101,7 +101,7 @@ Complete!
 
 It is working fine.
 
-[oracle@node bin]$ ./oewizard -allindexes -bigfile -bs 10000 -cl -create  -dba "admin@mahiatps_high" -dbap "WElcome_12##" -nocompress -p "WElcome_12##" -part -scale 1 -ts ts_sb_oe -u soe21 –v
+[oracle@node bin]$ ./oewizard -allindexes -bigfile -bs 10000 -cl -create  -dba "admin@orcl_high" -dbap "Test@1234" -nocompress -p "Test@1234" -part -scale 1 -ts ts_sb_oe -u soe21 –v
 
 SwingBench Wizard
 Author  :       Dominic Giles
