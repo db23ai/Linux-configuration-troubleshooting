@@ -1,0 +1,111 @@
+SwingBench Java version Error
+
+Issue :
+
+[oracle@node bin]$ ./oewizard -allindexes -bigfile -bs 10000 -cl -create  -dba "admin@mahiatps_high" -dbap "WElcome_12##" -nocompress -p "WElcome_12##" -part -scale 1 -ts ts_sb_oe -u soe21 –v
+java.lang.UnsupportedClassVersionError: com/dom/benchmarking/swingbench/wizards/Wizard has been compiled by a more recent version of the Java Runtime (class file version 55.0), this version of the Java Runtime only recognizes class file versions up to 52.0
+        at java.lang.ClassLoader.defineClass1(Native Method)
+        at java.lang.ClassLoader.defineClass(Unknown Source)
+        at java.security.SecureClassLoader.defineClass(Unknown Source)
+        at java.net.URLClassLoader.defineClass(Unknown Source)
+        at java.net.URLClassLoader.access$100(Unknown Source)
+        at java.net.URLClassLoader$1.run(Unknown Source)
+        at java.net.URLClassLoader$1.run(Unknown Source)
+        at java.security.AccessController.doPrivileged(Native Method)
+        at java.net.URLClassLoader.findClass(Unknown Source)
+        at java.lang.ClassLoader.loadClass(Unknown Source)
+        at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+        at java.lang.ClassLoader.loadClass(Unknown Source)
+        at java.lang.Class.forName0(Native Method)
+        at java.lang.Class.forName(Unknown Source)
+        at org.apache.commons.launcher.ChildMain.run(ChildMain.java:183)
+
+Solution:
+
+Use latest Swingbench software, I used swingbench20022024a.zip.
+
+This built for 11+. Hence Install latest java JDK.
+
+https://docs.oracle.com/en/java/javase/22/install/installation-jdk-linux-platforms.html#GUID-4907E1A6-7B4B-4E98-9DA5-BF2A4D01AA57
+
+Download RPM jdk-22_linux-x64_bin.rpm and copy to target server and install using yum.
+
+[root@node opc]# yum install -y jdk-22_linux-x64_bin.rpm
+Loaded plugins: versionlock
+Examining jdk-22_linux-x64_bin.rpm: 2000:jdk-22-22.0.1-8.x86_64
+Marking jdk-22_linux-x64_bin.rpm to be installed
+Resolving Dependencies
+--> Running transaction check
+---> Package jdk-22.x86_64 2000:22.0.1-8 will be installed
+--> Finished Dependency Resolution
+--> Finding unneeded leftover dependencies
+Found and removing 0 unneeded dependencies
+
+Dependencies Resolved
+
+=============================================================================================================================================================
+ Package                         Arch                            Version                                Repository                                      Size
+=============================================================================================================================================================
+Installing:
+ jdk-22                          x86_64                          2000:22.0.1-8                          /jdk-22_linux-x64_bin                          327 M
+
+Transaction Summary
+=============================================================================================================================================================
+Install  1 Package
+
+Total size: 327 M
+Installed size: 327 M
+Downloading packages:
+warning: /home/opc/jdk-22_linux-x64_bin.rpm: Header V3 RSA/SHA256 Signature, key ID ad986da3: NOKEY
+
+
+Public key for jdk-22_linux-x64_bin.rpm is not installed
+[root@source-node opc]# yum install -y jdk-22_linux-x64_bin.rpm --nogpgcheck
+Loaded plugins: versionlock
+Examining jdk-22_linux-x64_bin.rpm: 2000:jdk-22-22.0.1-8.x86_64
+Marking jdk-22_linux-x64_bin.rpm to be installed
+Resolving Dependencies
+--> Running transaction check
+---> Package jdk-22.x86_64 2000:22.0.1-8 will be installed
+--> Finished Dependency Resolution
+--> Finding unneeded leftover dependencies
+Found and removing 0 unneeded dependencies
+
+Dependencies Resolved
+
+=============================================================================================================================================================
+ Package                         Arch                            Version                                Repository                                      Size
+=============================================================================================================================================================
+Installing:
+ jdk-22                          x86_64                          2000:22.0.1-8                          /jdk-22_linux-x64_bin                          327 M
+
+Transaction Summary
+=============================================================================================================================================================
+Install  1 Package
+
+Total size: 327 M
+Installed size: 327 M
+Downloading packages:
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+Warning: RPMDB altered outside of yum.
+  Installing : 2000:jdk-22-22.0.1-8.x86_64                                                                                                               1/1
+  Verifying  : 2000:jdk-22-22.0.1-8.x86_64                                                                                                               1/1
+
+Installed:
+  jdk-22.x86_64 2000:22.0.1-8
+
+Complete!
+
+It is working fine.
+
+[oracle@node bin]$ ./oewizard -allindexes -bigfile -bs 10000 -cl -create  -dba "admin@mahiatps_high" -dbap "WElcome_12##" -nocompress -p "WElcome_12##" -part -scale 1 -ts ts_sb_oe -u soe21 –v
+
+SwingBench Wizard
+Author  :       Dominic Giles
+Version :       2.7.0.1438
+
+Running in Lights Out Mode using config file : ../wizardconfigs/oewizard.xml
+
