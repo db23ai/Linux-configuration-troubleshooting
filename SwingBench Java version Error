@@ -26,7 +26,7 @@ Use latest Swingbench software, I used swingbench20022024a.zip.
 
 This built for 11+. Hence Install latest java JDK.
 
-https://docs.oracle.com/en/java/javase/22/install/installation-jdk-linux-platforms.html#GUID-4907E1A6-7B4B-4E98-9DA5-BF2A4D01AA57
+https://download.oracle.com/java/22/latest/jdk-22_linux-x64_bin.rpm
 
 Download RPM jdk-22_linux-x64_bin.rpm and copy to target server and install using yum.
 
