@@ -1,0 +1,31 @@
+bash: xclock: command not found
+
+Xclock is not working in linux 8
+
+Steps-1 : Precheck
+
+a. login as root user in putty terminal or use command in prompt
+su -
+
+b.  Check OS Version
+
+uname -a
+
+Example :
+[root@test ~]# uname -a
+Linux test 5.4.17-2136.327.2.el8uek.x86_64 #2 SMP Fri Jan 5 14:55:52 PST 2024 x86_64 x86_64 x86_64 GNU/Linux
+
+c. Check RPM exists if output is empty then install RPM
+
+rpm -qa xorg-x11-apps
+
+Step-2: Install RPM
+
+d. Use company authorized proxy if you are VPN or firewall restrication
+
+export https_proxy=www-proxy-test.ind.test.com:80
+export http_proxy=www-proxy-test.ind.test.com:80
+
+# dnf config-manager --enable ol8_codeready_builder
+
+# dnf install xorg-x11-apps 
