@@ -1,0 +1,19 @@
+Setup Yum Repo in Oracle Linux 7
+
+Login into server using root user
+
+-- oracle OL7 Repo
+
+cd /etc/yum.repos.d
+
+cat oracle-temp.repo 
+[test]
+name=Oracle Linux $releasever Latest ($basearch)
+baseurl=https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-oracle
+gpgcheck=1
+enabled=1
+
+Reference : https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/
+
+
