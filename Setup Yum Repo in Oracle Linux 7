@@ -14,6 +14,17 @@ gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-oracle
 gpgcheck=1
 enabled=1
 
+
+-- Above solution for below issue :
+
+[root@servername]# yum install wget
+There are no enabled repos.
+ Run "yum repolist all" to see the repos you have.
+ To enable custom repositories:
+     yum-config-manager --enable <repo>
+
+
 Reference : https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/
+
 
 
