@@ -1,0 +1,64 @@
+Install Java (JDK ) 17
+
+-- Download JDK 17 RPM
+
+wget https://download.oracle.com/java/17/archive/jdk-17.0.12_linux-x64_bin.rpm
+
+Example:
+
+[root@ecmvm1-ci2rl1 swingbench]# wget https://download.oracle.com/java/17/archive/jdk-17.0.12_linux-x64_bin.rpm
+--2025-02-12 09:26:25--  https://download.oracle.com/java/17/archive/jdk-17.0.12_linux-x64_bin.rpm
+Resolving download.oracle.com (download.oracle.com)... 184.26.188.105
+Connecting to download.oracle.com (download.oracle.com)|184.26.188.105|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 182484307 (174M) [application/x-redhat-package-manager]
+Saving to: ‘jdk-17.0.12_linux-x64_bin.rpm’
+
+100%[==========================================================================================================================================================================>] 182,484,307  139MB/s   in 1.3s   
+
+2025-02-12 09:26:27 (139 MB/s) - ‘jdk-17.0.12_linux-x64_bin.rpm’ saved [182484307/182484307]
+
+
+-- Install JDK 17
+
+yum install jdk-17.0.12_linux-x64_bin.rpm --nogpgcheck 
+
+Example:
+
+[root@servername]# yum install jdk-17.0.12_linux-x64_bin.rpm --nogpgcheck  
+Examining jdk-17.0.12_linux-x64_bin.rpm: 2000:jdk-17-17.0.12-8.x86_64
+Marking jdk-17.0.12_linux-x64_bin.rpm to be installed
+Resolving Dependencies
+--> Running transaction check
+---> Package jdk-17.x86_64 2000:17.0.12-8 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+=======================================================================================================================================================================================
+ Package                              Arch                                 Version                                      Repository                                                Size
+=======================================================================================================================================================================================
+Installing:
+ jdk-17                               x86_64                               2000:17.0.12-8                               /jdk-17.0.12_linux-x64_bin                               304 M
+
+Transaction Summary
+=======================================================================================================================================================================================
+Install  1 Package
+
+Total size: 304 M
+Installed size: 304 M
+Is this ok [y/d/N]: y
+Downloading packages:
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  Installing : 2000:jdk-17-17.0.12-8.x86_64                                                                                                                                        1/1 
+  Verifying  : 2000:jdk-17-17.0.12-8.x86_64                                                                                                                                        1/1 
+
+Installed:
+  jdk-17.x86_64 2000:17.0.12-8                                                                                                                                                         
+
+Complete!
+
+ 
