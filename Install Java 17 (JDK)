@@ -1,12 +1,12 @@
 Install Java (JDK ) 17
 
--- Download JDK 17 RPM
+# Download JDK 17 RPM
 
 wget https://download.oracle.com/java/17/archive/jdk-17.0.12_linux-x64_bin.rpm
 
 Example:
 
-[root@ecmvm1-ci2rl1 swingbench]# wget https://download.oracle.com/java/17/archive/jdk-17.0.12_linux-x64_bin.rpm
+[root@servername]# wget https://download.oracle.com/java/17/archive/jdk-17.0.12_linux-x64_bin.rpm
 --2025-02-12 09:26:25--  https://download.oracle.com/java/17/archive/jdk-17.0.12_linux-x64_bin.rpm
 Resolving download.oracle.com (download.oracle.com)... 184.26.188.105
 Connecting to download.oracle.com (download.oracle.com)|184.26.188.105|:443... connected.
@@ -19,7 +19,7 @@ Saving to: ‘jdk-17.0.12_linux-x64_bin.rpm’
 2025-02-12 09:26:27 (139 MB/s) - ‘jdk-17.0.12_linux-x64_bin.rpm’ saved [182484307/182484307]
 
 
--- Install JDK 17
+# Install JDK 17
 
 yum install jdk-17.0.12_linux-x64_bin.rpm --nogpgcheck 
 
