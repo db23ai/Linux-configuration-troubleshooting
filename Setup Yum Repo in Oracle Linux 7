@@ -6,6 +6,17 @@ Login into server using root user
 
 cd /etc/yum.repos.d
 
+-- Create file oracle-temp.repo  and copy-paste below content, save it
+
+[test]
+name=Oracle Linux $releasever Latest ($basearch)
+baseurl=https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-oracle
+gpgcheck=1
+enabled=1
+
+Example :
+
 cat oracle-temp.repo 
 [test]
 name=Oracle Linux $releasever Latest ($basearch)
