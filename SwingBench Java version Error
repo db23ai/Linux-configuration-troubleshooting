@@ -2,7 +2,7 @@ SwingBench Java version Error
 
 Issue :
 
-[oracle@node bin]$ ./oewizard -allindexes -bigfile -bs 10000 -cl -create  -dba "admin@orcl_high" -dbap "Test@1234" -nocompress -p "Test@1234" -part -scale 1 -ts ts_sb_oe -u soe21 –v
+[oracle@servername]$ ./oewizard -allindexes -bigfile -bs 10000 -cl -create  -dba "admin@orcl_high" -dbap "Test@1234" -nocompress -p "Test@1234" -part -scale 1 -ts ts_sb_oe -u soe21 –v
 java.lang.UnsupportedClassVersionError: com/dom/benchmarking/swingbench/wizards/Wizard has been compiled by a more recent version of the Java Runtime (class file version 55.0), this version of the Java Runtime only recognizes class file versions up to 52.0
         at java.lang.ClassLoader.defineClass1(Native Method)
         at java.lang.ClassLoader.defineClass(Unknown Source)
@@ -30,7 +30,7 @@ https://download.oracle.com/java/22/latest/jdk-22_linux-x64_bin.rpm
 
 Download RPM jdk-22_linux-x64_bin.rpm and copy to target server and install using yum.
 
-[root@node opc]# yum install -y jdk-22_linux-x64_bin.rpm
+[root@servername opc]# yum install -y jdk-22_linux-x64_bin.rpm
 Loaded plugins: versionlock
 Examining jdk-22_linux-x64_bin.rpm: 2000:jdk-22-22.0.1-8.x86_64
 Marking jdk-22_linux-x64_bin.rpm to be installed
@@ -60,7 +60,7 @@ warning: /home/opc/jdk-22_linux-x64_bin.rpm: Header V3 RSA/SHA256 Signature, key
 
 
 Public key for jdk-22_linux-x64_bin.rpm is not installed
-[root@source-node opc]# yum install -y jdk-22_linux-x64_bin.rpm --nogpgcheck
+[root@source-servername opc]# yum install -y jdk-22_linux-x64_bin.rpm --nogpgcheck
 Loaded plugins: versionlock
 Examining jdk-22_linux-x64_bin.rpm: 2000:jdk-22-22.0.1-8.x86_64
 Marking jdk-22_linux-x64_bin.rpm to be installed
@@ -101,7 +101,7 @@ Complete!
 
 It is working fine.
 
-[oracle@node bin]$ ./oewizard -allindexes -bigfile -bs 10000 -cl -create  -dba "admin@orcl_high" -dbap "Test@1234" -nocompress -p "Test@1234" -part -scale 1 -ts ts_sb_oe -u soe21 –v
+[oracle@servername bin]$ ./oewizard -allindexes -bigfile -bs 10000 -cl -create  -dba "admin@orcl_high" -dbap "Test@1234" -nocompress -p "Test@1234" -part -scale 1 -ts ts_sb_oe -u soe21 –v
 
 SwingBench Wizard
 Author  :       Dominic Giles
