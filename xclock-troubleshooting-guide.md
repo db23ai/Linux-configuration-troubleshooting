@@ -1,3 +1,4 @@
+
 🖥️ Configure xclock in Oracle Linux 8 for GUI Display
 
     Issue:
@@ -50,7 +51,4 @@ After installation, test if xclock is working:
 xclock
 
 🎯 If the graphical clock appears, the installation is successful!
-
-
-
 
