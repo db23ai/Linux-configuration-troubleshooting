@@ -1,13 +1,17 @@
-Install JDK 17
+Here is the beautified version of the current page:
+
+---
+## Install JDK 17
 
 Install the JDK 17 RPM package using the following command:
-bash
 
+```bash
 yum install jdk-17.0.12_linux-x64_bin.rpm --nogpgcheck
+```
 
-Example:
-bash
+### Example:
 
+```bash
 [root@servername]# yum install jdk-17.0.12_linux-x64_bin.rpm --nogpgcheck
 Examining jdk-17.0.12_linux-x64_bin.rpm: 2000:jdk-17-17.0.12-8.x86_64
 Marking jdk-17.0.12_linux-x64_bin.rpm to be installed
@@ -43,4 +47,6 @@ Installed:
   jdk-17.x86_64 2000:17.0.12-8                                                                                                                                                         
 
 Complete!
+```
 
+You can update your markdown file with this formatted content.
