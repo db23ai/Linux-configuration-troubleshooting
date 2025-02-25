@@ -1,6 +1,7 @@
 🚀 Setup Yum Repository in Oracle Linux 7
 
 Setting up the Yum repository in Oracle Linux 7 allows you to install and manage packages seamlessly. Follow these steps for a smooth configuration.
+
 📌 Step 1: Switch to Root User
 
 Run the following command to switch to the root user:
@@ -14,6 +15,7 @@ Change the directory to the Yum repository configuration folder:
 cd /etc/yum.repos.d
 
 📝 Step 3: Create the Repository File
+
 📌 Create a new repository file:
 
 touch oracle-temp.repo
@@ -32,6 +34,7 @@ gpgcheck=1
 enabled=1
 
 Save and exit the file (ESC + :wq in vi).
+
 ✅ Step 4: Verify the Repository File
 
 Ensure the repository file is correctly created:
