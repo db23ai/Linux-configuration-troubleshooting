@@ -78,7 +78,7 @@ yum-config-manager --enable <repo_name>
 
 ## 🔗 Reference
 
-Oracle Linux 7 Yum Repository
+[Oracle Linux 7 Yum Repository](https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64)
 
 ## 🎯 Summary
 
