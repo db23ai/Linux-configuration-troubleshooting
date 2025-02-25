@@ -1,5 +1,4 @@
-
-🖥️ Configure xclock in Oracle Linux 8 for GUI Display
+🖥️ Fix xclock Display Not Working in Oracle Linux 8
 
     Issue:
     bash: xclock: command not found
@@ -7,7 +6,6 @@
     If xclock is not working in Oracle Linux 8, follow these steps to resolve the issue.
 
 📌 1. Prerequisites
-
 🔹 Log in as the root user
 
 su -
@@ -51,4 +49,24 @@ After installation, test if xclock is working:
 xclock
 
 🎯 If the graphical clock appears, the installation is successful!
+📌 Additional Troubleshooting
+🔹 Check if X11 Forwarding is enabled
+
+cat /etc/ssh/sshd_config | grep X11Forwarding
+
+📌 If the output is X11Forwarding no, update it to X11Forwarding yes and restart SSH:
+
+systemctl restart sshd
+
+🔹 Ensure DISPLAY variable is set
+
+echo $DISPLAY
+
+If empty, set it manually:
+
+export DISPLAY=:0.0
+
+🎯 Conclusion
+
+Following these steps will resolve the xclock display issue on Oracle Linux 8. If problems persist, ensure your X server is running on your local machine (e.g., Xming or VcXsrv for Windows users).
 
