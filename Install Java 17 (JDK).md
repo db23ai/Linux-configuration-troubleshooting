@@ -1,6 +1,4 @@
-Here is the beautified version of the current page:
 
----
 ## Install JDK 17
 
 Install the JDK 17 RPM package using the following command:
@@ -47,6 +45,3 @@ Installed:
   jdk-17.x86_64 2000:17.0.12-8                                                                                                                                                         
 
 Complete!
-```
-
-You can update your markdown file with this formatted content.
