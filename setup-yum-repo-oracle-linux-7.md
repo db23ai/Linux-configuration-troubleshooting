@@ -40,4 +40,4 @@ yum-config-manager --enable <repo>
 
 Reference:
 
-    [Oracle Linux Yum Server](https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/)
+    https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/
