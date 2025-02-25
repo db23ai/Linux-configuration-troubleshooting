@@ -1,6 +1,7 @@
 🚀 Setup Yum Repository in Oracle Linux 7
 
-Setting up the Yum repository in Oracle Linux 7 allows you to install and manage packages seamlessly. Follow these steps for a smooth configuration.
+Setting up the Yum repository in Oracle Linux 7 allows you to install and manage packages seamlessly. 
+Follow these steps for a smooth configuration.
 
 📌 Step 1: Switch to Root User
 
