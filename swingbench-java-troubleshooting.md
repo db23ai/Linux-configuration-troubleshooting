@@ -28,7 +28,7 @@ java.lang.UnsupportedClassVersionError: com/dom/benchmarking/swingbench/wizards/
 Use the latest SwingBench software (e.g., `swingbench20022024a.zip`) which is built for Java 11+. Hence, install the latest Java JDK.
 
 1. Download the latest Java JDK:
-   [Download JDK 22](https://download.oracle.com/java/22/latest/jdk-22_linux-x64_bin.rpm)
+   [Download JDK 22](https://www.oracle.com/in/java/technologies/downloads/)
 
 2. Copy the downloaded RPM to the target server and install using `yum`:
 
